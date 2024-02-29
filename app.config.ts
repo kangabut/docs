@@ -28,7 +28,6 @@ export default defineAppConfig({
 
     footer: {
       credits: {
-        icon: 'IconGithub',
         text: 'Achmad Yusuf Bukhori',
         href: 'https://khriits.my.id'
       },
