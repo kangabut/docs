@@ -1,12 +1,12 @@
 export default defineAppConfig({
   docus: {
-    title: 'Docus',
+    title: 'itskhri_',
 
-    description: 'The best place to start your documentation.',
+    description: 'Achmad Yusuf Blogs Documentation',
 
-    url: 'https://docus.dev',
+    url: 'https://khriits.my.id',
 
-    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
+    image: 'https://i.pinimg.com/736x/41/a5/ef/41a5efec54ebbd36e90faccdd3bff9af.jpg',
 
     socials: {},
 
@@ -28,9 +28,9 @@ export default defineAppConfig({
 
     footer: {
       credits: {
-        icon: 'IconDocus',
-        text: 'Powered by Docus',
-        href: 'https://docus.dev'
+        icon: 'IconGithub',
+        text: 'Achmad Yusuf Bukhori',
+        href: 'https://khriits.my.id'
       },
       textLinks: [],
       iconLinks: [],
