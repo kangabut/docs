@@ -1,22 +1,17 @@
 export default defineAppConfig({
   docus: {
-    title: 'Docus',
-    description: 'The best place to start your documentation.',
-    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
+    title: 'itskhri_',
+    description: 'Achmad Yusuf Bukhori Blogs Documentation.',
+    image: 'https://dthezntil550i.cloudfront.net/q3/latest/q32309200429316910025245669/8ead3082-4335-452c-a968-4e86d276f158.png',
     socials: {
       twitter: 'nuxt_js',
-      github: 'nuxt-themes/docus',
-      nuxt: {
-        label: 'Nuxt',
-        icon: 'simple-icons:nuxtdotjs',
-        href: 'https://nuxt.com'
-      }
+      github: 'kangabut',
     },
     github: {
       dir: '.starters/default/content',
       branch: 'main',
-      repo: 'docus',
-      owner: 'nuxt-themes',
+      repo: 'docs',
+      owner: 'justkhri',
       edit: true
     },
     aside: {
