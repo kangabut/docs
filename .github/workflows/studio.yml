@@ -5,7 +5,8 @@ run-name: studio nuxt build
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - 'main'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -63,18 +64,16 @@ jobs:
         run: ${{ steps.pkgman.outputs.package_manager }} add -D @nuxthq/studio
 
       - name: Create .nuxtrc
-        run: echo 'modules[]=@nuxthq/studio' > .nuxtrc
+        run: echo $'\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
 
       - name: Generate
-        run: ${{ steps.pkgman.outputs.package_manager }} nuxi generate
+        run: npx nuxi build --preset github_pages
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
-          NUXT_PUBLIC_STUDIO_TOKENS: e6364305a88b20d5fc79b360230231dd743831dff03b55edd6b4237b355bb7d9
+          NUXT_PUBLIC_STUDIO_TOKENS: c8ca6ebd19b090374f1f41fca192e0e2f1b7d81d728f2eec1fac09c6ef3d5ddb
 
-      - name: Add .nojekyll file
-        run: touch .output/public/.nojekyll
 
-        # Deployment job
+      # Deployment job
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
