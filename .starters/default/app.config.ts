@@ -4,7 +4,7 @@ export default defineAppConfig({
     description: 'Achmad Yusuf Bukhori Blogs Documentation.',
     image: 'https://dthezntil550i.cloudfront.net/q3/latest/q32309200429316910025245669/8ead3082-4335-452c-a968-4e86d276f158.png',
     socials: {
-      twitter: 'nuxt_js',
+      instagram: 'itskhri_',
       github: 'kangabut',
     },
     github: {
